@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+           #container{
+            display: grid;
+            grid-template-columns: 4fr 8fr;
+            
+           }
+           #form{
+            display:flex;
+            flex-direction: column;
+            row-gap: 20px;
+           }
+           table{
+            align-self:start;
+           }
+           table,th,td{
+            border:1px solid black;
+           border-collapse: collapse;
+           padding-inline:10px;
+           align-items: center;
+           }
+           th{
+            padding:10px;
+           }
+          
+    </style>
+</head>
+<body>
+    
+     <div id="container">
+    <form id="form">
+          <input type="text" name="name">
+          <input type="email" name="email">
+          <input type="text"  name="empid">
+          <input type="text"  name="company">
+          <select name="designation">
+           <option value="Choose your option below">Choose your option below</option>
+            <option value="Manager">Manager</option>
+            <option value="Tester">Tester</option>
+            <option value="Developer">Developer</option>
+        </select>
+          <button>Add Employee</button>
+    </form>
+     
+    <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Employee Id</th>
+                    <th>Company</th>
+                    <th>Designation</th>
+                    <th>Options</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                <tr>
+                    
+                </tr>
+            </tbody>
+        </table>
+     </div>
+     <script  src="./script.js"></script>
+</body>
+</html>
